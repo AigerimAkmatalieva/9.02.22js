@@ -45,4 +45,12 @@ decreaseButton.addEventListener('click', function() {
 });
 
 
+let colorful = document.querySelector('#example6');
+colorful.textContent = "Example6";
+colorful.style.color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`
+document.body.after(colorful);
 
+let example7Button = document.querySelector('#example7');
+example7Button.addEventListener('click', function() {
+  example7Button.remove();
+});

@@ -8,3 +8,6 @@ let example3Button = document.getElementById('example3');
 example3Button.addEventListener('click', function() {
 alert("Bye");
 });
+example3Button.onclick = function() {
+  alert("Nice to meet you");
+}

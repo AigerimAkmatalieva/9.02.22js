@@ -11,3 +11,22 @@ alert("Bye");
 example3Button.onclick = function() {
   alert("Nice to meet you");
 }
+
+let example4Button = document.querySelector('#example4');
+example4Button.addEventListener('click', function() {
+example4Button.textContent = "Nice to meet you"
+});
+
+
+let example5Div = document.querySelector('#example5');
+example5Div.addEventListener('click', function() {
+alert(example5Div.textContent.length)
+});
+
+
+let num = 0;
+let h1 = document.querySelector('h1');
+let resetButton = document.querySelector('#reset');
+resetButton.addEventListener('click', function() {
+h1.textContent = num;
+});

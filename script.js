@@ -55,3 +55,15 @@ document.body.after(colorful);
 document.querySelector('#example7').addEventListener('click', function() {
   this.remove();
 });
+
+let countDown = 3
+let example8Button = document.querySelector('#example8');
+function example8Action() {
+  countDown = countDown - 1;
+  alert( `Hello ${countDown}`);
+  if (countDown === 0) {
+    example8Button.removeEventListener('click',  example8Action);
+  }
+}
+
+example8Button.addEventListener('click',  example8Action);

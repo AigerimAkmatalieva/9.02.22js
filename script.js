@@ -24,9 +24,17 @@ alert(example5Div.textContent.length)
 });
 
 
-let num = 0;
+let num = 1;
 let h1 = document.querySelector('h1');
 let resetButton = document.querySelector('#reset');
 resetButton.addEventListener('click', function() {
 h1.textContent = num;
 });
+
+
+let increaseButton = document.querySelector('#increase');
+increaseButton.addEventListener('click', function() {
+  num = num + 1;
+  h1.textContent = num;
+});
+
